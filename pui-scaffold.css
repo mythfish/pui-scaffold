@@ -79,29 +79,29 @@ polyfill-next-selector { content: 'core-menu#menu core-item.core-selected'; }
   transition: transform 0.38s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-polyfill-next-selector { content: '.sourceButton';}
-::content .sourceButton {
+polyfill-next-selector { content: '.rightButton';}
+::content .rightButton {
   position: absolute;
   z-index: 1;
 }
 
-polyfill-next-selector { content: '.sourceButton:not(.fallback)';}
-::content .sourceButton:not(.fallback) {
+polyfill-next-selector { content: '.rightButton:not(.fallback)';}
+::content .rightButton:not(.fallback) {
   background-color: #fcfcfc;
   color: #666464;
   bottom: -28px;
   right: 24px;
 }
 
-polyfill-next-selector { content: '.sourceButton.fallback';}
-::content .sourceButton.fallback {
+polyfill-next-selector { content: '.rightButton.fallback';}
+::content .rightButton.fallback {
   right: 24px;
   top: 13px;
 }
 
 
-polyfill-next-selector { content: '#drawerPanel[narrow] .sourceButton:not(.fallback)';}
-#drawerPanel[narrow] ::content .sourceButton:not(.fallback) {
+polyfill-next-selector { content: '#drawerPanel[narrow] .rightButton:not(.fallback)';}
+#drawerPanel[narrow] ::content .rightButton:not(.fallback) {
   right: 8px;
 }
 

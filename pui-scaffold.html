@@ -51,8 +51,8 @@ of the scaffold.
           <core-icon-button class="menuButton fallback" icon="menu"></core-icon-button>
         </content>
         <div hidden?="{{!narrow}}">{{item.label}}</div>
-        <content select=".sourceButton" on-tap="{{viewSourceAction}}">
-          <core-icon-button class="sourceButton fallback" icon="launch"></core-icon-button>
+        <content select=".rightButton" on-tap="{{rightButtonAction}}">
+          <core-icon-button class="rightButton fallback" icon="launch"></core-icon-button>
         </content>
 
       </core-toolbar>
@@ -213,7 +213,7 @@ of the scaffold.
       }
     },
 
-    viewSourceAction: function() {
+    logoutAction: function() {
       window.open('view-source:' + this.$.frame.contentWindow.location.href,
           this.item.tag);
     }
